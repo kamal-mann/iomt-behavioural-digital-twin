@@ -2,7 +2,7 @@
 
 Code and results for the paper "A Behavioural Digital Twin for Device-Aware Edge Intrusion Detection in the
 Internet of Medical Things" (K. Mann, S. K. Sharma, S. Vasishth; submitted to the IEEE Internet of Things
-Journal). Release `V4_2026_11_13`.
+Journal). Release `v1.0`.
 
 https://github.com/kamal-mann/iomt-behavioural-digital-twin
 
@@ -21,15 +21,12 @@ poisoning guard. The study measures the twin as a detector input, as an attack s
 | `twin_all.sh` | Runs step 16 in lanes (`check`, `A`, `B`, `final`) |
 | `configs/` | `twin.yaml` (twin study), its base configs `rerun.yaml`, `default_v2.yaml` and `default.yaml`, `twin_devices.json` (device identities), `smoke.yaml` and `twin_smoke.yaml` (tests) |
 | `tests/` | Unit and smoke tests (`python -m pytest -q tests`) |
-| `results/twin_study/` | The 26 twin-study runs, the tables behind the paper's twin results (`tables/`), the hypothesis verdict (`twin_h11.json`), poisoning, synchronisation and cost records, and logs |
+| `results/twin_study/` | The twin-study runs, the tables behind the paper's twin results (`tables/`), the hypothesis verdict (`twin_h11.json`), poisoning, synchronisation and cost records, and logs |
 | `results/pcap_extraction/` | Extraction and validation logs, the check of the extractor against the profiling CSVs (`pcap_validation.csv`), the device-row manifests |
-| `results/official_csv/` | Result tables, figures and run records of the detector on the official CICIoMT2024 CSVs (context benchmark, split inflation, ablation, efficiency) |
-| `results/data_audit/` | Data audit: duplicates, autocorrelation, single-feature shortcuts, split inflation |
 
 Every run folder has `config.json` and `metrics.json`; `metrics.json` records the SHA-256 of `src/trace_iomt/`
 and of the input data (see `RELEASE_NOTES.md` for the two code states). Trained models, per-window predictions and the extracted device rows are not included
-because of their size. The scripts of the official-CSV benchmark are available from the corresponding author on
-request.
+because of their size.
 
 ## Running the twin study
 

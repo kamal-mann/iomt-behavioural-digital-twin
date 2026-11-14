@@ -1,4 +1,4 @@
-# Release V4_2026_11_13
+# Release v1.0
 
 Code and results behind "A Behavioural Digital Twin for Device-Aware Edge Intrusion Detection in the Internet of
 Medical Things" (submitted to the IEEE Internet of Things Journal). See `README.md` for the contents and how to run
