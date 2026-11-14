@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+preferred-citation:
+  type: article
+  title: "A Behavioural Digital Twin for Device-Aware Edge Intrusion Detection in the Internet of Medical Things"
+  authors:
+    - family-names: "Mann"
+      given-names: "Kamal"
+    - family-names: "Sharma"
+      given-names: "Sudhir Kumar"
+    - family-names: "Vasishth"
+      given-names: "Sneha"
+  journal: "IEEE Internet of Things Journal"
+  year: 2026
+  notes: "Submitted. Volume, issue, pages and DOI to be added once published."
+authors:
+  - family-names: "Mann"
+    given-names: "Kamal"
+  - family-names: "Sharma"
+    given-names: "Sudhir Kumar"
+  - family-names: "Vasishth"
+    given-names: "Sneha"
+title: "iomt-behavioural-digital-twin"
+repository-code: "https://github.com/kamal-mann/iomt-behavioural-digital-twin"
+version: "V4_2026_11_13"
+date-released: 2026-11-13
+license: MIT

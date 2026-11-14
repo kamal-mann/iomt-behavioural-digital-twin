@@ -1,0 +1,7 @@
+# Settings of every reported run (default_v2.yaml); outputs go to results_rerun/ and logs_rerun/.
+base: default_v2.yaml
+
+paths:
+  results_dir: results_rerun
+  documents_dir: documents_rerun
+  logs_dir: logs_rerun

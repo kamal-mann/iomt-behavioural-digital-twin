@@ -1,0 +1,23 @@
+# Training settings of every reported run, on top of default.yaml.
+base: default.yaml
+
+paths:
+  results_dir: results_v2
+  documents_dir: documents_v2
+  logs_dir: logs_v2
+  # processed_dir and ciciomt_csv_dir are inherited
+
+data:
+  oversample_small_classes: true   # every class contributes max_windows_per_class windows per epoch
+
+model:
+  dropout: 0.2
+
+loss:
+  focal_gamma: 1.0
+
+train:
+  epochs: 50
+  patience: 10
+
+# windows.stride_val stays at 16 (inherited from default.yaml): about 59k validation windows, every 16th.
