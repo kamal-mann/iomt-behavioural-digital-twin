@@ -1,4 +1,7 @@
-# Release v1.0
+# Release v1.1
+
+v1.1 adds `scripts/20_seen_unseen_split.py`, the class-level analysis of the per-class F1 change by whether the
+attacked device appears in that class's training captures (paper Section VI-A). Code and results are otherwise as in v1.0.
 
 Code and results behind "A Behavioural Digital Twin for Device-Aware Edge Intrusion Detection in the Internet of
 Medical Things" (submitted to the IEEE Internet of Things Journal). See `README.md` for the contents and how to run

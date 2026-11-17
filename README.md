@@ -2,7 +2,7 @@
 
 Code and results for the paper "A Behavioural Digital Twin for Device-Aware Edge Intrusion Detection in the
 Internet of Medical Things" (K. Mann, S. K. Sharma, S. Vasishth; submitted to the IEEE Internet of Things
-Journal). Release `v1.0`.
+Journal). Release `v1.1`.
 
 https://github.com/kamal-mann/iomt-behavioural-digital-twin
 
@@ -18,6 +18,7 @@ poisoning guard. The study measures the twin as a detector input, as an attack s
 | `src/trace_iomt/` | Library: packet-capture features (`pcapfeat.py`, `pcapcheck.py`), the twin (`twin.py`, `twin_data.py`, `twin_sync.py`, `twin_poison.py`), the twin-aware detector (`models/`), training, metrics and the twin-study tables (`twin_study.py`, `twin_compare.py`) |
 | `scripts/12`–`14` | Packet-capture scan, check of the extractor against the published profiling CSVs, extraction of per-device rows |
 | `scripts/15`–`19` | Twin build, training of the twin variants (V0–V4) and the random forest, tables and verdict, poisoning test, cost and time to detect |
+| `scripts/20_seen_unseen_split.py` | Class-level split of the per-class F1 change by whether the attacked device appears in that class's training captures (standard library only) |
 | `twin_all.sh` | Runs step 16 in lanes (`check`, `A`, `B`, `final`) |
 | `configs/` | `twin.yaml` (twin study), its base configs `rerun.yaml`, `default_v2.yaml` and `default.yaml`, `twin_devices.json` (device identities), `smoke.yaml` and `twin_smoke.yaml` (tests) |
 | `tests/` | Unit and smoke tests (`python -m pytest -q tests`) |
